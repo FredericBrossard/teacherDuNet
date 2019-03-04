@@ -32,6 +32,7 @@ public class TabArrayList {
 		tabCapitale.add("Paris");
 		tabCapitale.add("Madrid");
 		tabCapitale.add("Moscow");
+		tabCapitale.add("Berlin");
 		
 		// boucle sur chaque élément item du tableau tabCapitale est affiché
 		for (String item : tabCapitale) {
