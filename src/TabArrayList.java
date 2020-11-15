@@ -7,6 +7,10 @@ public class TabArrayList {
 	//cours https://www.youtube.com/watch?v=_t3ivpBu57E
 	//cours https://www.youtube.com/watch?v=4xvceAWfgbM
 
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		ArrayList<Integer> tabInt = new ArrayList<>();
 		//la méthode add ajoute dynamiquement un element à la fin du tableau

@@ -6,6 +6,10 @@ import java.util.ArrayList;
 
 public class CollectionMusic {
 
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		//Exercice ici : https://www.youtube.com/watch?v=tQAotZQfQy4. lire un fichier de titre de chanson
@@ -28,6 +32,8 @@ public class CollectionMusic {
 			e.printStackTrace();
 		}
 		System.out.println(artistes);
+		System.out.println(artistes);
+	
 	
 	}
 
