@@ -25,7 +25,45 @@ public class CollectionHasMap {
 		
 		System.out.println(refNbHab);
 		
+		String phoneNumber= "052348572";
+		String codeDepart = "972";
+		phoneNumber = phoneAddIndcatif(phoneNumber, codeDepart);
+		System.out.println("Le nouveau no est le : " + phoneNumber);
 		
+		String phoneNumber2= "052348572";
+		String codeDepart2 = "975";
+		phoneNumber = phoneAddIndcatif(phoneNumber2, codeDepart2);
+		System.out.println("Le nouveau no est le : " + phoneNumber);
+	}
+		
+	private static String phoneAddIndcatif(String phoneNumber, String codeDepart) {
+		
+		HashMap<String, String> tabPostalCdToPhoneNumber = new HashMap<>();
+		
+		uploadTablePostalCdAndIndicatif(tabPostalCdToPhoneNumber);
+		
+		System.out.println(tabPostalCdToPhoneNumber);
+		
+		System.out.println("L indicatif du departement : " + codeDepart  + " : " + tabPostalCdToPhoneNumber.get(codeDepart));
+		
+		String phoneNumberWithIndicatif;
+		if ( null != tabPostalCdToPhoneNumber.get(codeDepart) ) {
+			phoneNumberWithIndicatif = tabPostalCdToPhoneNumber.get(codeDepart) + phoneNumber;
+		} else {
+			phoneNumberWithIndicatif = phoneNumber;
+		}
+		
+		
+		System.out.println("Le No avec indicatif est le : " + phoneNumberWithIndicatif);
+		
+		return phoneNumberWithIndicatif;
+	}
+
+	private static void uploadTablePostalCdAndIndicatif(HashMap<String, String> tabPostalCdToPhoneNumber) {
+		tabPostalCdToPhoneNumber.put("971","90");
+		tabPostalCdToPhoneNumber.put("972","96");
+		tabPostalCdToPhoneNumber.put("973","94");
+		tabPostalCdToPhoneNumber.put("974","91");
 
 	}
 
