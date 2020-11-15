@@ -64,6 +64,7 @@ public class CollectionHasMap {
 		tabPostalCdToPhoneNumber.put("972","96");
 		tabPostalCdToPhoneNumber.put("973","94");
 		tabPostalCdToPhoneNumber.put("974","91");
+		tabPostalCdToPhoneNumber.put("975","92");
 
 	}
 
